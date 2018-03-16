@@ -1,1 +1,1 @@
-本项目使用的关键技术：SpringMVC、MyBatis、SHIRO、FREEMARKER、
+本项目使用的关键技术：SpringMVC、MyBatis、SHIRO、FREEMARKER。
