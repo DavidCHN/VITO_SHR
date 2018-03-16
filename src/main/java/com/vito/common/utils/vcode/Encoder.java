@@ -3,8 +3,12 @@ import java.io.IOException;
 import java.io.OutputStream;
 
 /**
- * @author: wuhongjun
- * @version:1.0
+ * 
+* @Description:  
+* @author 魏海龙  
+* @email weihailong@bkvito.com 
+* @date 2018年3月16日 上午11:35:05 
+* @version V1.0
  */
 public class Encoder
 {

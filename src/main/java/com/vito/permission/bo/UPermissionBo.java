@@ -7,9 +7,11 @@ import com.vito.common.utils.StringUtils;
 
 /**
  * 
- * 权限选择
- * @author zhou-baicheng
- *
+* @Description:  权限选择
+* @author 魏海龙  
+* @email weihailong@bkvito.com 
+* @date 2018年3月16日 上午11:45:20 
+* @version V1.0
  */
 public class UPermissionBo extends UPermission implements Serializable {
 	private static final long serialVersionUID = 1L;

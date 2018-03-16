@@ -16,22 +16,11 @@ import redis.clients.jedis.exceptions.JedisConnectionException;
 
 /**
  * 
- * 开发公司：SOJSON在线工具 <p>
- * 版权所有：© www.sojson.com<p>
- * 博客地址：http://www.sojson.com/blog/  <p>
- * <p>
- * 
- * Redis Manager Utils
- * 
- * <p>
- * 
- * 区分　责任人　日期　　　　说明<br/>
- * 创建　周柏成　2016年6月2日 　<br/>
- *
- * @author zhou-baicheng
- * @email  so@sojson.com
- * @version 1.0,2016年6月2日 <br/>
- * 
+* @Description:Redis Manager Utils  
+* @author 魏海龙  
+* @email weihailong@bkvito.com 
+* @date 2018年3月16日 上午11:38:45 
+* @version V1.0
  */
 public class JedisManager {
 

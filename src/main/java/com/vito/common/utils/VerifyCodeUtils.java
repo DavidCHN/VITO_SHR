@@ -29,7 +29,7 @@ public class VerifyCodeUtils{
     
     /**
      * 验证码对象
-     * @author zhou-baicheng
+     * @author 魏海龙
      *
      */
     public static class Verify{

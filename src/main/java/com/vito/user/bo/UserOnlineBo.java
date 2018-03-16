@@ -5,9 +5,12 @@ import java.util.Date;
 
 import com.vito.common.model.UUser;
 /**
- * Session  + User Bo
- * @author sojson.com
- *
+ * 
+* @Description:  Session  + User Bo
+* @author 魏海龙  
+* @email weihailong@bkvito.com 
+* @date 2018年3月16日 上午11:46:50 
+* @version V1.0
  */
 public class UserOnlineBo extends UUser implements Serializable {
 

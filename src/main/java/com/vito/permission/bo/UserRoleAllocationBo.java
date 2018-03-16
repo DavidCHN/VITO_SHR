@@ -4,9 +4,12 @@ import java.io.Serializable;
 
 import com.vito.common.model.UUser;
 /**
- * 用户角色分配 查询列表BO
- * @author zhou-baicheng
- *
+ * 
+* @Description:  用户角色分配 查询列表BO
+* @author 魏海龙  
+* @email weihailong@bkvito.com 
+* @date 2018年3月16日 上午11:45:37 
+* @version V1.0
  */
 public class UserRoleAllocationBo extends UUser implements Serializable {
 	private static final long serialVersionUID = 1L;

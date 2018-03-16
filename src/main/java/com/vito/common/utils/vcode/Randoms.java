@@ -3,10 +3,12 @@ package com.vito.common.utils.vcode;
 import java.util.Random;
 
 /**
- * <p>随机工具类</p>
- *
- * @author: wuhongjun
- * @version:1.0
+ * 
+* @Description:  随机工具类
+* @author 魏海龙  
+* @email weihailong@bkvito.com 
+* @date 2018年3月16日 上午11:36:09 
+* @version V1.0
  */
 public class Randoms
 {

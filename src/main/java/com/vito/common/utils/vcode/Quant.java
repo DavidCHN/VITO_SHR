@@ -1,10 +1,12 @@
 package com.vito.common.utils.vcode;
 
 /**
- * <p></p>
- *
- * @author: wuhongjun
- * @version:1.0
+ * 
+* @Description:  
+* @author 魏海龙  
+* @email weihailong@bkvito.com 
+* @date 2018年3月16日 上午11:35:54 
+* @version V1.0
  */
 public class Quant
 {

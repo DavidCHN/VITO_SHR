@@ -22,10 +22,12 @@ import sun.misc.BASE64Decoder;
 
 
 /**
- * String工具
- * 主要对 StringUtils 的一些方法进行重写,达到更方便的使用
- * @author zhou-baicheng
- *
+ * 
+* @Description: * String工具  主要对 StringUtils 的一些方法进行重写,达到更方便的使用  
+* @author 魏海龙  
+* @email weihailong@bkvito.com 
+* @date 2018年3月16日 上午11:33:36 
+* @version V1.0
  */
 public class StringUtils extends org.apache.commons.lang.StringUtils{
 	

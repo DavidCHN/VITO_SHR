@@ -19,23 +19,11 @@ import com.vito.permission.service.PermissionService;
 import com.vito.permission.service.RoleService;
 /**
  * 
- * 开发公司：itboy.net<br/>
- * 版权：itboy.net<br/>
- * <p>
- * 
- * 用户权限分配
- * 
- * <p>
- * 
- * 区分　责任人　日期　　　　说明<br/>
- * 创建　周柏成　2016年5月26日 　<br/>
- * <p>
- * *******
- * <p>
- * @author zhou-baicheng
- * @email  i@itboy.net
- * @version 1.0,2016年5月26日 <br/>
- * 
+* @Description:  用户权限分配
+* @author 魏海龙  
+* @email weihailong@bkvito.com 
+* @date 2018年3月16日 上午11:45:50 
+* @version V1.0
  */
 @Controller
 @Scope(value="prototype")

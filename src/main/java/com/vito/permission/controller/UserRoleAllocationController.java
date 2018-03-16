@@ -19,22 +19,11 @@ import com.vito.permission.service.PermissionService;
 import com.vito.user.service.UUserService;
 /**
  * 
- * 开发公司：SOJSON在线工具 <p>
- * 版权所有：© www.sojson.com<p>
- * 博客地址：http://www.sojson.com/blog/ <p>
- * <p>
- * 
- * 用户角色分配
- * 
- * <p>
- * 
- * 区分　责任人　日期　　　　说明<br/>
- * 创建　周柏成　2016年6月2日 　<br/>
- *
- * @author zhou-baicheng
- * @email  so@sojson.com
- * @version 1.0,2016年6月2日 <br/>
- * 
+* @Description:  用户角色分配
+* @author 魏海龙  
+* @email weihailong@bkvito.com 
+* @date 2018年3月16日 上午11:46:25 
+* @version V1.0
  */
 @Controller
 @Scope(value="prototype")

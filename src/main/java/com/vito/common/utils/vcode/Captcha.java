@@ -5,12 +5,12 @@ import java.awt.Font;
 import java.io.OutputStream;
 
 /**
- * <p>
- * 验证码抽象类,暂时不支持中文
- * </p>
  * 
- * @author: wuhongjun
- * @version:1.0
+* @Description:验证码抽象类,暂时不支持中文  
+* @author 魏海龙  
+* @email weihailong@bkvito.com 
+* @date 2018年3月16日 上午11:34:52 
+* @version V1.0
  */
 public abstract class Captcha extends Randoms {
 	protected Font font = new Font("Verdana", Font.ITALIC | Font.BOLD, 28); // 字体

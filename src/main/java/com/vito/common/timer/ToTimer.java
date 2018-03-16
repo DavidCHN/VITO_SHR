@@ -9,10 +9,13 @@ import org.springframework.stereotype.Component;
 
 import com.vito.permission.service.RoleService;
 
-
 /**
- * 定时任务恢复数据
- *
+ * 
+* @Description:定时任务恢复数据  
+* @author 魏海龙  
+* @email weihailong@bkvito.com 
+* @date 2018年3月16日 上午11:31:11 
+* @version V1.0
  */
 @Component
 public class ToTimer{

@@ -11,9 +11,12 @@ import com.vito.core.shiro.session.CustomSessionManager;
 import com.vito.core.shiro.session.SessionStatus;
 import com.vito.core.shiro.session.ShiroSessionRepository;
 /**
- * Session 管理
- * @author sojson.com
- *
+ * 
+* @Description:Session 管理  
+* @author 魏海龙  
+* @email weihailong@bkvito.com 
+* @date 2018年3月16日 上午11:39:11 
+* @version V1.0
  */
 @SuppressWarnings("unchecked")
 public class JedisShiroSessionRepository implements ShiroSessionRepository {

@@ -7,10 +7,12 @@ import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.io.OutputStream;
 /**
- * <p>Gif验证码类</p>
- *
- * @author: wuhongjun
- * @version:1.0
+ * 
+* @Description:Gif验证码类  
+* @author 魏海龙  
+* @email weihailong@bkvito.com 
+* @date 2018年3月16日 上午11:35:19 
+* @version V1.0
  */
 public class GifCaptcha extends Captcha
 {

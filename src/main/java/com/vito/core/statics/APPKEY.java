@@ -1,9 +1,12 @@
 package com.vito.core.statics;
 /**
- * 不可变参数定义
+ * 
+* @Description:  不可变参数定义
  * 第三方参数
- * @author zhou-baicheng
- *
+* @author 魏海龙  
+* @email weihailong@bkvito.com 
+* @date 2018年3月16日 上午11:44:03 
+* @version V1.0
  */
 public interface APPKEY {
 	/**豆瓣*/

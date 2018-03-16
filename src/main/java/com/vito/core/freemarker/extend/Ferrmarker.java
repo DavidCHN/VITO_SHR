@@ -31,22 +31,11 @@ import freemarker.template.TemplateModelException;
 
 /**
  * 
- * freemarker 工具类
- * 
- * 开发：tomeili.com<br/>
- * 版权：tomeili.com<br/>
- * <p>
- * 
- * <p>
- * 
- * 区分　责任人　日期　　　　说明<br/>
- * 创建　周柏成　2013-6-08　<br/>
- * <p>
- * 
- * @author
- * 
- * @version 1.0, 2013-6-08
- * 
+* @Description:freemarker 工具类  
+* @author 魏海龙  
+* @email weihailong@bkvito.com 
+* @date 2018年3月16日 上午11:37:07 
+* @version V1.0
  */
 @SuppressWarnings({  "unchecked"})
 public class Ferrmarker {

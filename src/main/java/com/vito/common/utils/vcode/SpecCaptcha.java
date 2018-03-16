@@ -9,10 +9,12 @@ import java.io.OutputStream;
 
 import javax.imageio.ImageIO;
 /**
- * <p>png格式验证码</p>
- *
- * @author: wuhongjun
- * @version:1.0
+ * 
+* @Description:png格式验证码  
+* @author 魏海龙  
+* @email weihailong@bkvito.com 
+* @date 2018年3月16日 上午11:36:26 
+* @version V1.0
  */
 public class SpecCaptcha extends Captcha
 {

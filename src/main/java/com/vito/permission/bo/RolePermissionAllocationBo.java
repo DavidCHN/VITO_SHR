@@ -2,9 +2,12 @@ package com.vito.permission.bo;
 
 import java.io.Serializable;
 /**
- * 权限分配 查询列表BO
- * @author zhou-baicheng
- *
+ * 
+* @Description:  权限分配 查询列表BO
+* @author 魏海龙  
+* @email weihailong@bkvito.com 
+* @date 2018年3月16日 上午11:45:09 
+* @version V1.0
  */
 public class RolePermissionAllocationBo implements Serializable {
 	private static final long serialVersionUID = 1L;
