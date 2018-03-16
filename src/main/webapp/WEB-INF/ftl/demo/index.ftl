@@ -8,58 +8,46 @@
 		<link   rel="shortcut icon" href="${basePath}/favicon.ico" />
 		<link href="${basePath}/js/common/bootstrap/3.3.5/css/bootstrap.min.css?${_v}" rel="stylesheet"/>
 		<link href="${basePath}/css/common/base.css?${_v}" rel="stylesheet"/>
+	  <link rel="stylesheet" href="https://js.arcgis.com/4.6/esri/css/main.css">
+	  <style>
+    html,
+    body,
+    #viewDiv {
+    	padding:0;
+      margin-top: 20px;
+      height: 100%;
+      width: 100%;
+    }
+  </style>
+	  
+  <script src="https://js.arcgis.com/4.6/"></script>
+		 <script>
+    require([
+      "esri/Map",
+      "esri/views/SceneView",
+      "dojo/domReady!"
+    ], function(Map, SceneView) {
+
+      var map = new Map({
+        basemap: "streets",
+        ground: "world-elevation"
+      });
+
+      var view = new SceneView({
+        container: "viewDiv",
+        map: map,
+        scale: 50000000,
+        center: [106, 34]
+      });
+
+    });
+  </script>
 	</head>
-	<body data-target="#one" data-spy="scroll">
+	<body data-target="#one" data-spy="scroll" >
 		
 		<@_top.top 1/>
-		<div class="container" style="padding-bottom: 15px;min-height: 300px; margin-top: 40px;">
-			<#--row-->
-			<div class="row">
-				<@_left.user 2/>
-				<div class="col-md-10">
-					<h2>安全提交测试</h2>
-					<hr>
-					<div id="getPermissionTree" >
-						<form class=" col-md-8" method="post" action="${basePath}/demo/submit/${urlPart}.shtml" enctype="multipart/form-data" id="formId">
-						  <input type="hidden" name="id" value="1">
-						  <div class="form-group">
-						     <div class="input-group">
-							     <span class="input-group-btn">
-						            <button class="btn btn-default" type="button">Phone</button>
-						          </span>
-						          <input type="text" class="form-control" name="${phone}" >
-						          <div class="input-group-btn">
-						            <button type="button" class="btn btn-success">发送验证码</button>
-						          </div>
-				        	  </div>
-						  </div>
-						  <div class="form-group">
-						     <div class="input-group">
-							     <span class="input-group-btn">
-						            <button class="btn btn-default" type="button">LoginName</button>
-						          </span>
-						          <input type="text" class="form-control" name="${loginName}" >
-				        	  </div>
-						  </div>
-						  <div class="form-group">
-						     <div class="input-group">
-							     <span class="input-group-btn">
-						            <button class="btn btn-default" type="button">Password</button>
-						          </span>
-						          <input type="text" class="form-control" name="${password}">
-				        	  </div>
-						  </div>
-						  <div class="form-group">
-							  <button class="btn btn-success pull-right" type="submit">提交信息</button>
-						  </div>
-					    	<p class="help-block"></p>
-						</form>
-					
-					</div>
-				</div>
-			</div>
-			<#--/row-->
-		</div>
+		 <div id="viewDiv"></div>
+	
 		<script  src="${basePath}/js/common/jquery/jquery1.8.3.min.js"></script>
 		<script  src="${basePath}/js/common/layer/layer.js"></script>
 		<script  src="${basePath}/js/common/bootstrap/3.3.5/js/bootstrap.min.js"></script>

@@ -20,9 +20,9 @@ jQuery(function($){
         // Components
         slide_links        : 'blank',    // Individual links for each slide (Options: false, 'num', 'name', 'blank')
         slides             : [    // Slideshow Images
-                                 {image : 'http://open.itboy.net/itboy/js/itboy/app/login_1.jpg'},
-                                 {image : 'http://open.itboy.net/itboy/js/itboy/app/login_2.jpg'},
-                                 {image : 'http://open.itboy.net/itboy/js/itboy/app/login_3.jpg'}
+                                 {image : 'https://images.unsplash.com/photo-1470327500070-4857199b1bcd?ixlib=rb-0.3.5&s=6cef74d0a29054612d9726d90b4541e3&auto=format&fit=crop&w=1500&q=80.png'},
+                                 {image : 'https://images.unsplash.com/photo-1437081327115-6c0ccc43d1ca?ixlib=rb-0.3.5&s=dd8dbbccaf5aa802aa60c8b2942996ba&auto=format&fit=crop&w=1052&q=80.png'},
+                                 {image : 'https://images.unsplash.com/photo-1414090496606-35fb2249fb15?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=064529923c7914fe2b6ddfb8e129b873&auto=format&fit=crop&w=1050&q=80.png'}
                              ]
 
     });
