@@ -62,13 +62,15 @@
 							</@shiro.hasPermission>
 						</ul>
 					</li>	
+					</@shiro.hasAnyRoles>    
+					<@shiro.hasAnyRoles name='100004'>
 				<@shiro.hasPermission name="/demo/index.shtml">
 					<li>
 					<a class="dropdown-toggle" href="${basePath}/demo/index.shtml">
 						二三维一体化<span class="collapsing"></span>
 					</a></li>
-			
-				</@shiro.hasPermission>           
+				</@shiro.hasPermission>   
+				</@shiro.hasAnyRoles>            
 				<!--<li>
 					<a class="dropdown-toggle" href="http://www.sojson.com/shiro" target="_blank">
 						本项目介绍<span class="collapsing"></span>
@@ -79,7 +81,7 @@
 						Shiro Demo 其他版本<span class="collapsing"></span>
 					</a>
 				</li>-->	 
-				</@shiro.hasAnyRoles>             
+				         
 	          </ul>
 	           <ul class="nav navbar-nav  pull-right" >
 				<li class="dropdown ${(index==10)?string('active','')}" style="color:#fff;">
