@@ -4,14 +4,14 @@
 		<meta charset="utf-8" />
 		<title>用户角色分配 - 权限管理</title>
 		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
-		<link   rel="icon" href="http://img.wenyifan.net/images/favicon.ico" type="image/x-icon" />
-		<link   rel="shortcut icon" href="http://img.wenyifan.net/images/favicon.ico" />
-		<link href="/js/common/bootstrap/3.3.5/css/bootstrap.min.css?${_v}" rel="stylesheet"/>
-		<link href="/css/common/base.css?${_v}" rel="stylesheet"/>
-		<script  src="http://open.itboy.net/common/jquery/jquery1.8.3.min.js"></script>
-		<script  src="/js/common/layer/layer.js"></script>
-		<script  src="/js/common/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-		<script  src="/js/shiro.demo.js"></script>
+			<link   rel="icon" href="${basePath}/favicon.ico" type="image/x-icon" />
+		<link   rel="shortcut icon" href="${basePath}/favicon.ico" />
+		<link href="${basePath}/js/common/bootstrap/3.3.5/css/bootstrap.min.css?${_v}" rel="stylesheet"/>
+		<link href="${basePath}/css/common/base.css?${_v}" rel="stylesheet"/>
+		<script  src="${basePath}/js/common/jquery/jquery1.8.3.min.js"></script>
+		<script  src="${basePath}/js/common/layer/layer.js"></script>
+		<script  src="${basePath}/js/common/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<script  src="${basePath}/js/shiro.demo.js"></script>
 		<script >
 		so.init(function(){
 				//初始化全选。
@@ -63,7 +63,7 @@
 				var index = layer.confirm("确定操作？",function(){
 					<#--loding-->
 					var load = layer.load();
-					$.post('/role/addRole2User.shtml',{ids:ids.join(','),userId:$('#selectUserId').val()},function(result){
+					$.post('${basePath}/role/addRole2User.shtml',{ids:ids.join(','),userId:$('#selectUserId').val()},function(result){
 						layer.close(load);
 						if(result && result.status != 200){
 							return layer.msg(result.message,so.default),!1;
@@ -80,7 +80,7 @@
 			*/
 			function selectRoleById(id){
 				var load = layer.load();
-				$.post("/role/selectRoleByUserId.shtml",{id:id},function(result){
+				$.post("${basePath}/role/selectRoleByUserId.shtml",{id:id},function(result){
 					layer.close(load);
 					if(result && result.length){
 						var html =[];
