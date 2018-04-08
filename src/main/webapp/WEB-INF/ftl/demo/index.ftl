@@ -15,7 +15,7 @@
 		    body,
 		    #viewDiv {
 		    	padding:0;
-		      margin-top: 20px;
+		      margin-top: 0px;
 		      height: 100%;
 		      width: 100%;
 		    }
@@ -29,6 +29,10 @@
 		      border: none;
 		      box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 2px;
 		    }
+		    .esri-ui-top-left {
+			    top: 28px;
+			    left: 0;
+			}
   </style>
 	  
   <script src="http://127.0.0.1/arcgis_js_api/library/4.6/dojo/dojo.js"></script>
@@ -39,6 +43,8 @@
       "esri/Map",
       "esri/views/SceneView",
       "esri/views/MapView",
+      "esri/widgets/BasemapToggle",
+       "esri/layers/FeatureLayer",
       "dojo/dom",
       "dojo/domReady!"
     ], function(
@@ -46,6 +52,8 @@
       Map,
       SceneView,
       MapView,
+      BasemapToggle,
+      FeatureLayer,
       dom) {
        var switchButton = document.getElementById("switch-btn");
 
@@ -62,13 +70,31 @@
 
       var initialViewParams = {
         map: map,
-        zoom: 4,
-        center: [103, 34],
+        zoom: 11,
+        center: [103.73, 36.03	],
         container: appConfig.container
       };
 
       var osmLayer = new OpenStreetMapLayer();
+      
+       var popupTemplate = { // autocasts as new PopupTemplate()
+          title: "楼宇名称: {NAME}",
+          content: "<p><b>人口: 200万/人 </b></p>" +
+            "<p> 统计时间: 2017年8月</p>"
+        };
       map.add(osmLayer);
+		var featureLayer = new FeatureLayer({
+          url: "http://127.0.0.1:6080/arcgis/rest/services/lz/FeatureServer/0",
+          outFields: ["*"],
+          popupTemplate: popupTemplate
+        });
+        var featureLayer1 = new FeatureLayer({
+          url: "http://127.0.0.1:6080/arcgis/rest/services/lz/FeatureServer/0",
+          outFields: ["*"],
+          popupTemplate: popupTemplate
+        });
+        map.add(featureLayer);
+         //map.add(featureLayer1);
 
       appConfig.mapView = createView(initialViewParams, "2d");
       appConfig.activeView = appConfig.mapView;
